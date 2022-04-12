@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="fear.of.god">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".base.BaseApp"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/Theme.Photo6">
+        <activity
+            android:exported="true"
+            android:name=".page.IndexPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".page.MainPage" />
+        <activity android:name=".page.business.ShatterPage" />
+        <activity android:name=".page.business.BokehPage" />
+        <activity android:name=".page.business.ColorPage" />
+        <activity android:name=".page.business.PipPage" />
+        <activity android:name=".page.business.PixelPage" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+</manifest>
