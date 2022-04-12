@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.roger.catloadinglibrary.CatLoadingView
 
 abstract class BasePage(layoutId:Int) :AppCompatActivity(layoutId){
-    private val loadingView by lazy {
+    protected val loadingView by lazy {
         CatLoadingView()
     }
     override fun onCreate(savedInstanceState: Bundle?) {

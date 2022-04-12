@@ -5,14 +5,32 @@ import android.content.Intent
 import com.jhworks.library.ImageSelector
 import fear.of.god.R
 import fear.of.god.base.BasePage
-import fear.of.god.utils.ToastType
-import fear.of.god.utils.selectImage
-import fear.of.god.utils.showToast
+import fear.of.god.utils.*
+import kotlinx.android.synthetic.main.layout_option.*
 
 
 class OptionPage :BasePage(R.layout.layout_option){
     override fun start() {
-
+        bokeh.click {
+            targetClass = Constant.TYPE_BOKEH
+            openAlbum()
+        }
+        color.click {
+            targetClass = Constant.TYPE_COLOR
+            openAlbum()
+        }
+        pip.click {
+            targetClass = Constant.TYPE_PIP
+            openAlbum()
+        }
+        pixel.click {
+            targetClass = Constant.TYPE_PIXEL
+            openAlbum()
+        }
+        shatter.click {
+            targetClass = Constant.TYPE_SHATTER
+            openAlbum()
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -25,6 +43,7 @@ class OptionPage :BasePage(R.layout.layout_option){
                 }?: kotlin.run {
                     showToast("no image selected", ToastType.ERROR)
                 }
+                nextByTargetClass()
             }
         }
     }

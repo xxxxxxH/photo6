@@ -2,6 +2,41 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="8">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <fear.of.god.widget.CustomStickerView
+            android:id="@+id/iSticker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <fear.of.god.widget.OptionTitle
+            android:id="@+id/iTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_below="@+id/iTitle"
+            android:layout_above="@+id/iGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <fear.of.god.widget.IRadioGroup
+            android:id="@+id/iGroup"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
 </LinearLayout>

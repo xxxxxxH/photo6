@@ -49,4 +49,5 @@ dependencies {
     implementation 'com.gitee.jacksonliao:ImageSelect:2.1.0'
     implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
     implementation 'com.roger.catloadinglibrary:catloadinglibrary:1.0.9'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
 }

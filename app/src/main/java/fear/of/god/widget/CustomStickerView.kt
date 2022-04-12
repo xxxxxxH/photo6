@@ -65,6 +65,10 @@ class CustomStickerView : LinearLayout {
         stickerLayout?.addSticker(Sticker(context, b))
     }
 
+    fun setBitmap(b: Bitmap){
+        image!!.setImageBitmap(b)
+    }
+
     fun save() {
         loadingView.show((context as AppCompatActivity).supportFragmentManager, "")
         (context as AppCompatActivity).lifecycleScope.launch(Dispatchers.IO) {

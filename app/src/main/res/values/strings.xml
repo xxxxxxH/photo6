@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">photo6</string>
+    <string-array name="color">
+        <item>#b71c1c</item>
+        <item>#880e4f</item>
+        <item>#fb8c00</item>
+        <item>#311b92</item>
+        <item>#009688</item>
+        <item>#4a5736</item>
+        <item>#bbdb88</item>
+        <item>#382921</item>
+        <item>#66FF00</item>
+        <item>#555064</item>
+        <item>#DE3163</item>
+        <item>#2e8dfb</item>
+        <item>#013019</item>
+        <item>#ee6012</item>
+        <item>#f8f47a</item>
+        <item>#66931F</item>
+        <item>#BDB76B</item>
+        <item>#291281</item>
+        <item>#E31230</item>
+        <item>#ffc234</item>
+        <item>#66097e</item>
+        <item>#6e785e</item>
+        <item>#E32636</item>
+    </string-array>
 </resources>

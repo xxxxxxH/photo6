@@ -27,7 +27,12 @@
         <activity android:name=".page.business.ColorPage" />
         <activity android:name=".page.business.PipPage" />
         <activity android:name=".page.business.PixelPage" />
+        <activity android:name=".page.OptionPage" />
+        <activity android:name=".page.PrivacyPolicyPage" />
+        <activity android:name=".page.MyImagePage" />
+        <activity android:name=".page.ImagePage" />
 
+        <meta-data android:name="ScopedStorage" android:value="true" />
     </application>
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
